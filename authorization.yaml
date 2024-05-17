@@ -1,0 +1,15 @@
+jenkins:
+  authorizationStrategy:
+    folderBased:
+      globalRoles:
+      - name: "read-only-role"
+        permissions:
+        - id: "Overall/Read"
+        - id: "Overall/SystemRead"
+        - id: "Job/Discover"
+        - id: "Job/Read"
+        - id: "View/Read"
+        sids:
+        - "dev"
+        - "prod"
+        - "uat"
